@@ -1,1 +1,12 @@
-<p>header works!</p>
+<div class="header-bar">
+    <div class="content row" [ngClass]="{'content-center': isHome || hideOptions}">
+        <div *ngIf="hideOptions" class="menu-btn-absolute">
+            <button (click)="sideBarVisible = true" class ="btn menu-btn">
+                <i class="fa fa-bars header-icon"></i>
+            </button>
+        </div>
+        <div class="text-center" [ngClass]="{'col-3' : !isHome && !hideOptions}">
+            <img [routerLink]='homeRoute' class="vsg-logo clickable" src="../../../../assets/images/logo.jpg">
+        </div>
+    </div>
+</div>> 

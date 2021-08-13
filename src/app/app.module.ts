@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ImageButtonComponent } from './components/common/image-button/image-button.component';
 import { PeopleComponent } from './components/people/people.component';
 import { HeaderComponent } from './components/common/header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HeaderComponent } from './components/common/header/header.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
